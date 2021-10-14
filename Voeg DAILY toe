@@ -1,0 +1,55 @@
+daily toevoegen
+
+
+local type = {money=1,item=2,weapon=3} -- no touchey, thank you
+Config = {}
+
+Config.claimed = "~g~Je hebt je dagelijkse beloning gekregen!"
+Config.rewards = {
+    {
+        type = type.money,
+        value = 2500
+    },
+    {
+        type = type.money,
+        value = 5000
+    },
+    {
+        type = type.money,
+        value = 1500
+    },
+    {
+        type = type.money,
+        value = 7500
+    }
+}
+
+Config.random_rewards_enabled = true
+Config.random_rewards = {
+    {
+        chance = 90, -- this can be any whole number (higher = better chance)
+        {
+            type = type.money,
+            value = 1000
+        },
+        {
+            type = type.money,
+            value = 2500
+        },
+        {
+            type = type.money,
+            value = 5000
+        }
+    },
+    {
+        chance = 2,
+        {
+            type = type.money,
+            value = 10000
+        },
+        {
+            type = type.money,
+            value = 8500
+        }
+    }
+}
